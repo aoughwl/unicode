@@ -1,6 +1,6 @@
 ## Run: nimony c -p:src tests/test_unicode.nim  (then the binary)
 import std/syncio
-import aowlunicode/[unidata, casenorm, segment, ranges, proptables]
+import unicode/[unidata, casenorm, segment, ranges, proptables]
 
 var failures = 0
 var total = 0

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate src/aowlunicode/segdata.nim: the UAX #29 break properties for
+"""Generate src/unicode/segdata.nim: the UAX #29 break properties for
 Intl.Segmenter (grapheme, word and sentence boundaries).
 
     python3 tools/gen_intl_seg.py UCD_DIR
@@ -10,7 +10,7 @@ the Unicode version test262 targets (17.0.0).
 """
 import sys, os, re
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "src", "aowlunicode", "segdata.nim")
+OUT = os.path.join(os.path.dirname(__file__), "..", "src", "unicode", "segdata.nim")
 
 GB = ["Other", "CR", "LF", "Control", "Extend", "ZWJ", "Regional_Indicator", "Prepend",
       "SpacingMark", "L", "V", "T", "LV", "LVT"]

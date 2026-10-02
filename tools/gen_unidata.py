@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate src/aowlunicode/unidata.nim: case mappings and normalization data.
+"""Generate src/unicode/unidata.nim: case mappings and normalization data.
 
 Run with a Python whose unicodedata matches the target Unicode version
 (ES2025 / test262 expect Unicode 16):  python3 tools/gen_unidata.py
@@ -8,7 +8,7 @@ or from UCD text files of a newer version (test262 now tests Unicode 17):
 """
 import sys, unicodedata, os
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "src", "aowlunicode", "unidata.nim")
+OUT = os.path.join(os.path.dirname(__file__), "..", "src", "unicode", "unidata.nim")
 
 def is_surrogate(c):
     return 0xD800 <= c <= 0xDFFF
